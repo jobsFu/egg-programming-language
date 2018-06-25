@@ -8,6 +8,10 @@
     "webpack": "^4.12.1",
     "webpack-cli": "^3.0.8"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lcfme/egg-programming-language.git"
+  },
   "scripts": {
     "test": "node test.js",
     "build": "webpack --config webpack.config.js"
