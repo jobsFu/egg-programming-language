@@ -1,4 +1,3 @@
-#! /usr/bin/env node
 program = '';
 function parseExpression() {
     program = skipSpace(program);
