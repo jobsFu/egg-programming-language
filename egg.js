@@ -2,7 +2,7 @@
 program = '';
 function parseExpression() {
     program = skipSpace(program);
-    var match, expr, skipLen;
+    var expr;
 
     if (/^["']/.test(program)) {
         expr = { type: 'value', value: parseString() };
@@ -141,7 +141,6 @@ specialForms['fun'] = function(args, env) {
         return evaluate(body, localEnv);
     };
 };
-
 
 function parseString() {
     var startSign = program[0],
